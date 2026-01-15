@@ -50,8 +50,8 @@ export async function GET(req: NextRequest) {
 
     const sourceLink =
       media_type === "tv"
-        ? `https://abhishek1996-streambuddy.hf.space/api/extract?tmdbId=${id}&type=tv&season=${season}&episode=${episode}`
-        : `https://abhishek1996-streambuddy.hf.space/api/extract?tmdbId=${id}&type=movie`;
+        ? `https://vasurajput12345-fleet1.hf.space/api/extract?tmdbId=${id}&type=tv&season=${season}&episode=${episode}`
+        : `https://vasurajput12345-fleet1.hf.space/api/extract?tmdbId=${id}&type=movie`;
 
     // const res = await fetch(sourceLink, {
     //   headers: {
@@ -65,7 +65,7 @@ export async function GET(req: NextRequest) {
       {
         headers: {
           "User-Agent": "Mozilla/5.0",
-          Referer: "https://abhishek1996-streambuddy.hf.space/",
+          Referer: "https://vasurajput12345-fleet1.hf.space/",
         },
       },
       10000
@@ -89,7 +89,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({
       success: true,
       link:
-        "https://abhishek1996-streambuddy.hf.space/api/stream?url=" +
+        "https://vasurajput12345-fleet1.hf.space/api/stream?url=" +
         encodeURIComponent(data.m3u8Url),
       type: "hls",
     });
